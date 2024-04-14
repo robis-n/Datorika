@@ -1,0 +1,93 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Feb 23, 2024, 10:38:35 AM
+    Author     : rnikolajevs9
+*/
+
+.vards{
+    position:absolute;
+    top: 10;
+    right: 0;
+}
+
+body{
+    font-family: Arial;
+    background-color: beige;
+}
+
+.virsraksts{
+    text-align: center;
+}
+
+.ievads{
+    margin: 0 5px;
+}
+
+.main{
+    margin: 5px;
+}
+li{
+    margin: 10px 20px;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+  
+/* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.row{
+    display: flex;
+}
+  
+.column {
+    flex: 33.33%;
+    padding: 5px;
+}
+
+.linked-box {
+    width: 200px;
+    height: 50px;
+    background-color: #8b9b00;
+    color: #fff;
+    text-align: center;
+    line-height: 50px; /* Center text vertically */
+    font-size: 18px;
+    border-radius: 8px;
+    margin: 20px auto;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .linked-box:hover {
+    background-color: #c58b54; /* Darker shade of blue on hover */
+  }
+  .linked-box a {
+    text-decoration: none;
+    color: inherit; /* Inherit color from parent */
+    display: block;
+    height: 100%;
+}
+.teksts{
+    margin: auto;
+    text-align: center;
+}
+
+.teksts a{
+    text-decoration: none;
+    background-color: black;
+    color: #f0f0f0;
+}
+
+b{
+    font-family: Monospace;
+    font-size: 18px;
+}

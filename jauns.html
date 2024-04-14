@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/jauns.css">
+        <title>Jauns</title>
+    </head>
+    <body>
+        <h1>Gaidot dzimšanas dienu..</h1>
+        <hr>
+        <form>
+            <p>Ievadi pilnu datumu, kad Tev būs tuvākā dzimšanas diena</p>
+            <div>
+                <label for="gads">Gads</label>
+                <input type="text" id="gads" name="gads" placeholder="Ievadi gadu" required>
+            </div>
+            <div>
+                <label for="menesis">Mēnesis</label>
+                <input type="text" id="menesis" name="menesis" placeholder="Ievadi mēnesi" required>
+            </div>
+            <div>
+                <label for="diena">Diena</label>
+                <input type="text" id="diena" name="diena" placeholder="Ievadi datumu" required>
+            </div>
+            <button onclick="dienas.value=izrekinidienas()" type="button">Aprēķināt dienu skaitu līdz dzimšanas dienai</button>
+            <div>
+                <label for="dienas">Līdz svētkiem atlikušas</label>
+                <input type="text" name="dienas" style="width: 30px;">dienas : ))
+                <p id="result"></p>
+            </div>
+            
+        </form>
+        <p id="result"></p>
+        <div class="linked-box">
+            <a href="rv1g.html">rv1g</a>
+        </div>
+        <div class="linked-box">
+            <a href="index.html">index</a>
+        </div>
+        <div class="linked-box">
+            <a href="lietotnes.html">lietotnes</a>
+        </div>
+        <div class="linked-box">
+            <a href="mervienibas.html">mervienibas</a>
+        </div>
+        <script>
+            function izrekinidienas(){
+                var gads = document.getElementById('gads').value;
+                var menesis = document.getElementById('menesis').value;
+                var diena = document.getElementById('diena').value;
+
+                var sodiena = new Date();
+                var dzimsana = new Date(gads, menesis-1, diena);
+
+                if (sodiena>dzimsana){
+                    dzimsana.setFullYear(sodiena.getFullYear()+1);
+                }
+
+                var vienaD = 1000*60*60*24;
+                var dienasPalikusas = Math.round((dzimsana - sodiena)/vienaD);
+
+                return dienasPalikusas;
+            }
+        </script>
+    </body>
+    
+</html>

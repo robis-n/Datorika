@@ -1,0 +1,25 @@
+div{
+    margin: 10px 0;
+}
+.linked-box {
+    width: 200px;
+    height: 50px;
+    background-color: #8b9b00;
+    color: #fff;
+    text-align: center;
+    line-height: 50px; /* Center text vertically */
+    font-size: 18px;
+    border-radius: 8px;
+    margin: 20px auto;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .linked-box:hover {
+    background-color: #c58b54; /* Darker shade of blue on hover */
+  }
+  .linked-box a {
+    text-decoration: none;
+    color: inherit; /* Inherit color from parent */
+    display: block;
+    height: 100%;
+}

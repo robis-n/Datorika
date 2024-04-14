@@ -1,0 +1,76 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Feb 23, 2024, 10:39:04 AM
+    Author     : rnikolajevs9
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1f1f1f;
+    color: #ffffff;
+}
+table {
+    margin: 20px;
+    align-items: center;
+    border-collapse: collapse;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    border-spacing: 0;
+    border-collapse: separate;
+}
+th, td {
+    border: 1px solid #ffffff; /* Change color as desired */
+    padding: 10px;
+    text-align: center;
+    background-color: #333333; /* Change color as desired */
+    color: #ffffff; /* Change color as desired */
+}
+th{
+    background-color: #444;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+td {
+    background-color: #333;
+}
+tr:nth-child(even) td {
+    background-color: #555;
+}
+h1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.linked-box {
+    width: 200px;
+    height: 50px;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    line-height: 50px; /* Center text vertically */
+    font-size: 18px;
+    border-radius: 8px;
+    margin: 20px auto;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.linked-box:hover {
+    background-color: #2f4d6d; /* Darker shade of blue on hover */
+}
+.linked-box a {
+    text-decoration: none;
+    color: inherit; /* Inherit color from parent */
+    display: block;
+    height: 100%;
+}
+img{
+    margin: 5px;
+    width: 50px;
+    border-radius: 10%;
+}
